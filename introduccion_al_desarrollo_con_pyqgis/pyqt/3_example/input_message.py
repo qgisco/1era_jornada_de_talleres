@@ -2,12 +2,12 @@ from PyQt5.QtWidgets import (QMainWindow,
                              QMessageBox,
                              QApplication)
 from PyQt5.uic import loadUi
-
+import app_resources
 
 class MainWindow(QMainWindow):
     def __init__(self):
-        super(MainWindow, self).__init__()
-        loadUi("input_message_ui.ui", self)
+        QMainWindow.__init__(self)
+        loadUi("input_message.ui", self)
         self.btn_show_message.clicked.connect(self.show_message)
 
     def show_message(self):

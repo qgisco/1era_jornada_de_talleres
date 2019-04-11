@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="qgisco">
+    <file>images/qgis-icon.png</file>
+  </qresource>
+</RCC>
