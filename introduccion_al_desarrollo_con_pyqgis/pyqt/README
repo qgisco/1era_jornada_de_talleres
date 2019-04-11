@@ -1,0 +1,23 @@
+Requerimientos
+- QGIS 3.x
+
+Como ejecutar los scripts
+
+- Abrir OSGeo4W Shell
+- Activar variables de entorno
+    Variables de entorno de QGIS
+        - python-qgis-ltr.bat
+
+    Variables de entorno de python3 y pyqt
+        - py3_env
+        - qt5_env
+
+Example 1
+    - Objetivo: Crear ventana con mensaje de bienvenida
+
+Example 2
+    - Objetivo: Utilizar señales de un objeto
+
+Example 3
+    - Objetivo: Realizar diseño de interfaces en Qt Designer y e importar el diseño con python
+    pyuic5 -x input_message_ui.ui -o input_message_ui.py

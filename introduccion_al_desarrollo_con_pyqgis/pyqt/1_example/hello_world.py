@@ -1,5 +1,4 @@
-from PyQt5 import (QtCore,
-                   QtWidgets)
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (QApplication,
                              QMainWindow,
                              QLabel,
@@ -20,7 +19,7 @@ class MainWindow(QMainWindow):
         centralWidget.setLayout(gridLayout)
 
         message = QLabel('Hola Grupo de Usuarios QGIS Colombia')
-        message.setAlignment(QtCore.Qt.AlignCenter)
+        message.setAlignment(Qt.AlignCenter)
         gridLayout.addWidget(message, 0, 0)
 
 
