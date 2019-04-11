@@ -1,23 +1,20 @@
 from PyQt5.QtWidgets import (QMainWindow,
                              QMessageBox,
                              QApplication)
-from input_message_ui import Ui_MainWindow
+from PyQt5.uic import loadUi
 
 
-class MainWindow(QMainWindow, Ui_MainWindow):
+class MainWindow(QMainWindow):
     def __init__(self):
-        # QtWidgets.QMainWindow.__init__(self)
         super(MainWindow, self).__init__()
-        self.setupUi(self)
-
+        loadUi("input_message_ui.ui", self)
         self.btn_show_message.clicked.connect(self.show_message)
 
     def show_message(self):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
         msg.setWindowTitle("Bienvenido al curso de PYQGIS")
-        msg.setText("Este es un mensaje para usted: \n\n {}".format(
-            self.text_edit_message.toPlainText()))
+        msg.setText("Este es un mensaje para usted: \n\n {}".format(self.text_edit_message.toPlainText()))
         msg.exec_()
 
 
