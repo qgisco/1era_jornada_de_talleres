@@ -3,7 +3,7 @@ from qgis.core import (QgsApplication,
 
 # See https://gis.stackexchange.com/a/155852/4972 for details about the prefix 
 QgsApplication.setPrefixPath('C:\OSGeo4W\apps\qgis-ltr', True)
-qgs = QgsApplication([], False)
+qgs = QgsApplication([], False) # No GUI
 qgs.initQgis()
 
 airport_layer = QgsVectorLayer("C:\pyqgis\geodata\sample_data.gpkg|layername=Airports", "airport", "ogr")
