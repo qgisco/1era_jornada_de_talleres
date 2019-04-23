@@ -1,0 +1,7 @@
+[general]
+name=ZoomToState
+description=Zoom to state
+version=1.0
+qgisMinimumVersion=3.0
+author=Tú
+email=tu_correo@gmail.com
